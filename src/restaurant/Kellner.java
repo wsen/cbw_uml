@@ -3,19 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package uml;
+package restaurant;
 
 /**
  *
  * @author 1767801
  */
-public class UML {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+public class Kellner {
+    public Gast kunde;
     
+    public void setKunde(Gast g) {
+        kunde = g;
+        kunde.bedienung = this; //this Kellner (ein Obj der Klasse Kellner)
+    }
+
 }

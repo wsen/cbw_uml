@@ -3,12 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package uml;
+package restaurant;
 
 /**
  *
  * @author 1767801
  */
-public class huxtlipotzli {
-    
+public class Gast {
+    public Kellner bedienung;
+    public void setBedienung(Kellner k){
+        bedienung = k;
+        k.kunde = this; 
+    } 
 }
